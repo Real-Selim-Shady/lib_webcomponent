@@ -1,0 +1,7 @@
+{
+  "$schema": "../../../Bpifrance/demo-project/node_modules/ng-packagr/ng-package.schema.json",
+  "dest": "../../dist/custom-button",
+  "lib": {
+    "entryFile": "src/public-api.ts"
+  }
+}

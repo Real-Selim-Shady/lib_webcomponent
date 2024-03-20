@@ -1,0 +1,44 @@
+{
+  "name": "demo-project",
+  "version": "0.0.0",
+  "scripts": {
+    "ng": "../Bpifrance/demo-project/node_modules/.bin/ng",
+    "start": "../Bpifrance/demo-project/node_modules/.bin/ng serve",
+    "build": "rm -rf ../Bpifrance/demo-project/dist && npm run build:library",
+    "build:library": "./node_modules/.bin/ng build custom-button --configuration production",
+    "watch": "../Bpifrance/demo-project/node_modules/.bin/ng build --watch --configuration development",
+    "test": "../Bpifrance/demo-project/node_modules/.bin/ng test",
+    "publish": "cd ../Bpifrance/demo-project/dist/custom-button && npm publish --access public"
+  },
+  "private": true,
+  "dependencies": {
+    "@angular-builders/custom-webpack": "^16.0.2-beta.2",
+    "@angular/animations": "^16.2.0",
+    "@angular/common": "^16.2.0",
+    "@angular/compiler": "^16.2.0",
+    "@angular/core": "^16.2.0",
+    "@angular/elements": "^16.2.0",
+    "@angular/forms": "^16.2.0",
+    "@angular/platform-browser": "^16.2.0",
+    "@angular/platform-browser-dynamic": "^16.2.0",
+    "@angular/router": "^16.2.0",
+    "@steavebpi/custom-button": "^0.0.3",
+    "rxjs": "~7.8.0",
+    "tslib": "^2.3.0",
+    "zone.js": "~0.13.0"
+  },
+  "devDependencies": {
+    "@angular-devkit/build-angular": "^16.2.12",
+    "@angular/cli": "^16.2.12",
+    "@angular/compiler-cli": "^16.2.0",
+    "@types/jasmine": "~4.3.0",
+    "jasmine-core": "~4.6.0",
+    "karma": "~6.4.0",
+    "karma-chrome-launcher": "~3.2.0",
+    "karma-coverage": "~2.2.0",
+    "karma-jasmine": "~5.1.0",
+    "karma-jasmine-html-reporter": "~2.1.0",
+    "ng-packagr": "^16.2.0",
+    "typescript": "~5.1.3"
+  }
+}
